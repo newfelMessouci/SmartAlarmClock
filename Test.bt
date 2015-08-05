@@ -1,10 +1,110 @@
 [
   {
-    "version": "0.1.2"
+    "version": "1.0.0"
   },
   {
-    "id": "85c4a824-3926-456b-910a-e53f3cad07b2",
-    "name": "998a72e6-b335-4c4e-829e-731dfb056c28",
-    "children": []
+    "uuid": "3e2cfbee-c105-45f4-a814-afe38b7f2ccc",
+    "name": "Test",
+    "description": "",
+    "children": [
+      {
+        "id": "5c698a62-980a-429b-9999-28030dd2a2de",
+        "activated": true,
+        "type": "sequence",
+        "metadata": {
+          "label": "",
+          "itemTemplate": "BTSequenceNode.qml"
+        },
+        "properties": {},
+        "children": [
+          {
+            "id": "8468b0a7-7b56-4a76-a443-cacc1ccd1efa",
+            "activated": true,
+            "type": "action",
+            "metadata": {
+              "label": "",
+              "itemTemplate": "BTActionNode.qml"
+            },
+            "properties": {
+              "name": "",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": []
+          },
+          {
+            "id": "e5c3f958-2ec8-4092-97dc-8c7cb95d1073",
+            "activated": true,
+            "type": "action",
+            "metadata": {
+              "label": "",
+              "itemTemplate": "BTActionNode.qml"
+            },
+            "properties": {
+              "name": "",
+              "inputParams": [],
+              "outputParams": []
+            },
+            "children": []
+          },
+          {
+            "id": "0b5931c1-6e09-4c0f-8e52-676ff7ea4b68",
+            "activated": true,
+            "type": "sequence",
+            "metadata": {
+              "label": "",
+              "itemTemplate": "BTSequenceNode.qml"
+            },
+            "properties": {},
+            "children": [
+              {
+                "id": "093a9760-ef61-4643-9699-ebc5a986cfe0",
+                "activated": true,
+                "type": "until",
+                "metadata": {
+                  "label": "",
+                  "itemTemplate": "BTUntilNode.qml"
+                },
+                "properties": {
+                  "op1": {
+                    "value": "true",
+                    "type": "boolean"
+                  },
+                  "op2": {
+                    "value": "false",
+                    "type": "boolean"
+                  },
+                  "op": "=="
+                },
+                "children": []
+              },
+              {
+                "id": "5a5805f7-22ad-44d3-a612-fcba1aac0651",
+                "activated": true,
+                "type": "not",
+                "metadata": {
+                  "label": "",
+                  "itemTemplate": "BTNotNode.qml"
+                },
+                "properties": {},
+                "children": [
+                  {
+                    "id": "91453422-8f2d-4fb4-8c2f-07af94e11774",
+                    "activated": true,
+                    "type": "random",
+                    "metadata": {
+                      "label": "",
+                      "itemTemplate": "BTSelectorRandom.qml"
+                    },
+                    "properties": {},
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
